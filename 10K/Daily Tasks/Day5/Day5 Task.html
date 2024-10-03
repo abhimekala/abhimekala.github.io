@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+      <h1 align="center">Enter your details here to get admission in 10Kcodders</h1>  
+      <form action="alert.txt">
+        <table align="center" cellspacing="20">
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="password" required></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" placeholder="password"></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="date" placeholder="DOB"></td>
+                </tr>
+                <tr>
+                    <td>Prefered time slot for demo:</td>
+                    <td><input type="time" placeholder="time"></td>
+                </tr>
+                <tr>
+                    <td>Upload profile picture:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Select Programs:</td>
+                    <td><select>
+                        <option value="">Select Below</option>
+                        <option value="">Gold</option>
+                        <option value="">Normal</option>
+                        <option value="">Silver</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Technology Preference:</td>
+                    <td>
+                        <input list="tech" name="tech" id="tech"/>
+                        <datalist id="tech">
+                            <option value="Python"></option>
+                            <option value="Java"></option>
+                            <option value="C++"></option>
+                            <option value="C"></option>
+                            <option value="JavaScript"></option>
+                        </datalist>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td align="right">
+                        <button>Register</button>
+                    </td>
+                </tr>
+            
+                       
+                
+            </tbody>
+           
+
+        </table>
+       
+      </form>
+    </body>
+</html>
