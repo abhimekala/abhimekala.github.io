@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic HTML Template</title>
+</head>
+<body style="background-color: #0093E9;background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);">
+
+    <header style="margin: 0; padding: 0">
+    <br><br> 
+    <h1 style="font-family:Georgia, 'Times New Roman', Times, serif; text-align: center; color: white;">ABHIRAM FOODS</h1>
+    <p style="font-family: 'Courier New', Courier, monospace; font-size: medium; text-align: center;color: white;">Good Food is Good Mood</p>
+    <br>
+    </header>
+
+    <nav align="right" style="background-color: #ededed;">
+        <br>
+        <a href="index.html" style="font-family: 'Courier New', Courier, monospace; font-size: 22px; color: rgb(0, 0, 0);">Home</a> |
+        <a href="about.html" style="font-family: 'Courier New', Courier, monospace; font-size: 22px; color: rgb(0, 0, 0);">About</a> |
+        <a href="products.html" style="font-family: 'Courier New', Courier, monospace; font-size: 22px; color: rgb(0, 0, 0);">Products</a> |
+        <a href="contact.html" style="font-family: 'Courier New', Courier, monospace; font-size: 22px; color: rgb(0, 0, 0);">Contact</a>
+        <br>
+    </nav><br><br>
+    <section style="padding: 20px; text-align: center; color: white;">
+        <h2 style="font-family:Georgia, 'Times New Roman', Times, serif;">Buy Now</h2>
+        <p style="font-family: 'Courier New', Courier, monospace; font-size: medium;">
+            Thank you for choosing Abhiram Foods. We look forward to serving you!
+        </p>
+        <p style="font-family: 'Courier New', Courier, monospace; font-size: medium;">
+            Please select the items you would like to purchase from the list below:
+        </p>
+        <form action="Orderplaed.html" style="border: 2px solid white; padding: 20px; border-radius: 10px;"></form>
+            <label for="name" style="font-family: 'Courier New', Courier, monospace; font-size: medium;">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="address" style="font-family: 'Courier New', Courier, monospace; font-size: medium;">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="phone" style="font-family: 'Courier New', Courier, monospace; font-size: medium;">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+            <label for="item" style="font-family: 'Courier New', Courier, monospace; font-size: medium;">Item:</label><br>
+            <select id="item" name="item" required>
+            <option value="item1">Rice</option>
+            <option value="item2">Millets</option>
+            <option value="item3">Flour</option>
+            </select><br><br>
+
+            <label for="quantity" style="font-family: 'Courier New', Courier, monospace; font-size: medium;">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+            <a href="Orderplaed.html"><input type="button" value="Buy Now"></a>
+        </form>
+    <div>
+        <footer style="position: static; bottom: 0; width: 100%; background-color: black; color: white; text-align: center; margin: 0; padding: 0;">
+            <br><br>
+            <p style="margin: 0;">&copy; 2024 ABHIRAM FOODS. All rights reserved.</p>
+            <br><br>    
+        </footer>
+    </div>
+
+</body>
+</html>
