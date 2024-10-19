@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: radial-gradient(rgb(255, 191, 0) 0%, rgba(255,255,255,1));
+}
+h1{
+
+    font-size: 24px;
+    text-align: center;
+}
+a{
+    text-align: right;
+    margin: 10px;
+    font-style: bold;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+table
+table, th, td {
+    
+    border: 2px solid black;
+    width: 100%;
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+}
+img{
+    width:300px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+}
