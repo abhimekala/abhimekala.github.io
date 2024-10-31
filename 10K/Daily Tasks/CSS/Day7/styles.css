@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+ol{
+    background-color: burlywood;
+
+}
+li{
+    margin-top: 20px;
+    padding: 10px;
+}
+[data-available="true"]{
+
+    background-color: green;
+}
+[data-available="false"]{
+
+    background-color: red;
+}
+[data-price="high"]
+{
+    font-weight: bold;
+}
+
+[data-category="Electronics"]
+{
+list-style-type: upper-alpha;
+}
