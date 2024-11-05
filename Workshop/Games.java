@@ -29,10 +29,15 @@ public class Games {
                 break;
             }
             if (selectedGameNumber > 0 && selectedGameNumber <= gameNames.length) {
-                selectedGames.add(gameNames[selectedGameNumber - 1]);
-                selectedPrices.add(gamePrices[selectedGameNumber - 1]);
-                totalPrice += gamePrices[selectedGameNumber - 1];
-                System.out.println(gameNames[selectedGameNumber - 1] + " added to your selection.");
+                String selectedGame = gameNames[selectedGameNumber - 1];
+                if (!selectedGames.contains(selectedGame)) {
+                    selectedGames.add(selectedGame);
+                    selectedPrices.add(gamePrices[selectedGameNumber - 1]);
+                    totalPrice += gamePrices[selectedGameNumber - 1];
+                    System.out.println(selectedGame + " added to your selection.");
+                } else {
+                    System.out.println(selectedGame + " has already been selected.");
+                }
             } else {
                 System.out.println("Invalid selection. Please select a valid game number.");
             }
