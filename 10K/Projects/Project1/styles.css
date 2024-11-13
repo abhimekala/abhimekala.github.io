@@ -1,0 +1,103 @@
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image:url("./images/wallpaperflare.com_wallpaper\ \(2\).jpg") ;
+    background-size: 100vw ;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    display: none;
+    cursor: pointer;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  
+    
+  
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    left: 0px;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #646cff;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-toggle-label {
+      display: flex;
+    }
+    .hamburger-icon {
+      display: flex;
+      align-items: center;
+      width: 1.5rem;
+      color: white;
+      border-radius: 5px;
+    }
+  
+    .nav-links {
+      display: none;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      align-items: center;
+
+      flex-direction: column;
+    
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .nav-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+  
+    .nav-toggle:checked  {
+      transform: translate(6px, 6px);
+    }
+  
+    
+  
+    .nav-toggle:checked  {
+      transform: translate(6px, -6px);
+    }
+  }

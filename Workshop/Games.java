@@ -28,24 +28,30 @@ public class Games {
             if (selectedGameNumber == 0) {
                 break;
             }
-            if (selectedGameNumber > 0 && selectedGameNumber <= gameNames.length) {
-                String selectedGame = gameNames[selectedGameNumber - 1];
-                if (!selectedGames.contains(selectedGame)) {
-                    selectedGames.add(selectedGame);
-                    selectedPrices.add(gamePrices[selectedGameNumber - 1]);
-                    totalPrice += gamePrices[selectedGameNumber - 1];
-                    System.out.println(selectedGame + " added to your selection.");
-                } else {
-                    System.out.println(selectedGame + " has already been selected.");
-                }
-            } else {
-                System.out.println("Invalid selection. Please select a valid game number.");
+            switch (selectedGameNumber) {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                    String selectedGame = gameNames[selectedGameNumber - 1];
+                    if (!selectedGames.contains(selectedGame)) {
+                        selectedGames.add(selectedGame);
+                        selectedPrices.add(gamePrices[selectedGameNumber - 1]);
+                        totalPrice += gamePrices[selectedGameNumber - 1];
+                        System.out.println(selectedGame + " added to your selection.");
+                    } else {
+                        System.out.println(selectedGame + " has already been selected.");
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid selection. Please select a valid game number.");
+                    break;
             }
         }
         scanner.close();
     }
 
-    // Method to display the final invoice with selected games, their prices, and the total price
+    // Method to display the final invoice with the selected games and total price
     void displayFinalInvoice() {
         System.out.println("\nFinal Invoice:");
         for (int i = 0; i < selectedGames.size(); i++) {
