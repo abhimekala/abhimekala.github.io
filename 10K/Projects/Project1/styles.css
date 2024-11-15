@@ -83,7 +83,7 @@ body {
 .home-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: rgba(98, 95, 95, 0.899);
+  color: rgba(0, 0, 0, 0.899);
 }
 
 .home2 {
@@ -142,15 +142,16 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-#work-section .h1, #work-section .p {
+#work-section .h1, #work-section  {
   text-align: center;
   margin: 0px 20px;
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: rgba(98, 95, 95, 0.899);
+  color: rgba(0, 0, 0, 0.899);
 }
 
 #work-section .p {
+  color: gray;
   font-size: 1.5rem;
 }
 
@@ -379,7 +380,15 @@ body {
 
   }
 }
-
+/* =================================================================================== */
+#blog-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
 
 
 /* ============================================================================================================================= */
