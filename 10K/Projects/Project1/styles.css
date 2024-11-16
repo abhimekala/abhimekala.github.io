@@ -389,6 +389,125 @@ body {
     padding: 1rem;
     background-color: rgb(255, 255, 255);
 }
+#blog-section h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.899);
+    text-align: center;
+}
+
+.blog-cards{
+    padding:50px 100px 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.blog-card{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    color: rgb(0, 0, 0);
+    width:100%;
+}
+.blog-card img{
+    width:100%;
+    object-fit: cover;
+}
+.blog-card h3{
+        font-size: 1.5rem;
+        color: rgb(50, 219, 198);
+}
+.blog-card .p3,p{
+    color: gray;
+    font-size: 0.8rem;
+    a{
+        color: rgb(50, 219, 198);
+    }
+}
+.blog-card p{
+    font-size: 1rem;
+   
+}
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+    background-color: rgb(169, 243, 230);
+}
+#contact-section h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.899);
+    text-align: center;
+}
+.contact-container{
+    padding: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: first baseline;
+    padding: 2rem;
+    gap: 6rem;
+}
+.contact-form{
+   background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 70vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    gap: 1.5rem;
+
+}
+.contact-form h3{
+   margin-left:20px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.contact-form input, .contact-form textarea{
+    margin: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 20px;
+    width: 70%;
+    height:20px;
+}
+.contact-form textarea{
+  max-width:70% ;
+   max-height:12%;
+}
+.contact-form button{
+  margin: 20px;
+  padding: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(50, 219, 198);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.address-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem;
+    gap: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
 
 
 /* ============================================================================================================================= */
@@ -518,5 +637,14 @@ body {
 .about-img{
   width: 100%;
   
+}
+.blog-cards{
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blog-card{
+  gap: 1rem;
 }
 }
